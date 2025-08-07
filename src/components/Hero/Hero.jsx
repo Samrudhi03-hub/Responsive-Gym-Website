@@ -1,6 +1,12 @@
 import React from 'react'
 import './Hero.css'
 import Header from '../Header/Header'
+// images required for right side
+import hero_image from "../../assets/hero_image.png";
+import hero_image_back from "../../assets/hero_image_back.png";
+import Heart from "../../assets/heart.png";
+import Calories from "../../assets/calories.png"
+
 
 const Hero = () => {
   return (
@@ -53,8 +59,31 @@ const Hero = () => {
                 <buttons className="btn">Learn More</buttons>
             </div>
 
+            {/* right side of hero section */}
         </div>
-        <div className="right-h">right side</div>
+        <div className="right-h">
+            <button className="btn">Join Now</button>
+
+            <div className="heart-rate">
+                <img src={Heart} alt="" />
+                <span>Heart Rate</span>
+                <span>116 bpm</span>
+            </div>
+
+            {/* hero-images */}
+            <img src={hero_image} alt="" className='hero_image' />
+            <img src={hero_image_back} alt="" className='hero_image_back' />
+
+            {/* calories */}
+            <div className="calories">
+                <img src={Calories} alt="" />
+                <div>
+                    <span>Calories burned</span>
+                    <span>220 kcal</span>
+                </div>
+                
+            </div>
+        </div>
     </div>
   )
 }
