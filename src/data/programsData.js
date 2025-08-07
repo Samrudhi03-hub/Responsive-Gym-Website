@@ -16,7 +16,7 @@ export const programsData = [
     ),
     heading: "Strength Training",
     details:
-      "In this program, you are trained to improve your strength through many exercises.",
+      "In this program, you’ll boost your strength with a variety of targeted exercises.",
   },
   {
     image: <svg width="16" height="17" viewBox="0 0 16 17"  xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +29,7 @@ export const programsData = [
     </svg>,
     heading: "Cardio Training",
     details:
-      "In this program, you are trained to do sequential moves in range of 20 until 30 minutes.",
+      "This program includes sequential movements lasting 20 to 30 minutes to improve stamina.",
   },
   {
     image: <svg width="12" height="16" viewBox="0 0 12 16"  xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@ export const programsData = [
     ,
     heading: "Fat Burning",
     details:
-      "This program is suitable for you who wants to get rid of your fat and lose their weight.",
+      "Ideal for anyone looking to burn fat and lose weight effectively.",
   },
   {
     image: <svg width="20" height="16" viewBox="0 0 20 16"  xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@ export const programsData = [
     ,
     heading: "Health Fitness",
     details:
-      "This programs is designed for those who exercises only for their body fitness not body building.",
+      "This program is for those focused on overall fitness rather than muscle building.",
   },
 ];
 

@@ -16,7 +16,7 @@ const Footer = () => {
                 <img src={Linkedin} alt="" />
             </div>
             <div className="logo-f">
-                <img src={Logo} alt="" />
+                <img src={Logo} alt="" style={{display: 'none' }}/>
             </div>
         </div>
 

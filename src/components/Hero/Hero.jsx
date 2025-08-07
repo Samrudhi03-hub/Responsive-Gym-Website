@@ -7,12 +7,14 @@ import hero_image_back from "../../assets/hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png"
 import {motion} from 'framer-motion'
+import NumberCounter from 'number-counter'
 
 const Hero = () => {
 
-    const transition = {type: 'spring', duration: 3}
+    const transition = {type: 'spring', duration: 3};
+    const mobile = window.innerWidth<=768 ? true : false; 
   return (
-    <div className='hero'>
+    <div className='hero' id='home'>
         <div className="blur hero-blur"></div>
         <div className="left-h">
 
@@ -20,25 +22,25 @@ const Hero = () => {
         {/* the best ad */}
             <div className="the-best-ad">
                 <motion.div
-                initial={{left: '238px'}}
+                initial={{left: mobile ? '165px': '238px'}}
                 whileInView={{left: '8px'}}
                 transition={{...transition, type: 'tween'}}
                 ></motion.div>
                 <span>the best fitness club in the town</span>
             </div>
 
-            {/* Hero header */}
+            {/* Hero header */}   
             <div className="hero-text">
                 <div>
-                    <span className='stroke-text'>Shape </span>
+                    <span className='stroke-text'>Transform </span>
                     <span>Your</span>
                 </div>
                 <div>
-                    <span>Ideal Body</span>
+                    <span>Body Today</span>
                 </div>
                 <div>
                     <span>
-                        In here we will help you to shape and build your ideal body and live up your life to fullest
+                        In this space, we shape bodies and uplift lives — one goal at a time
                     </span> 
                 </div>
             </div>
@@ -47,22 +49,24 @@ const Hero = () => {
 
             <div className="figures">
                 <div>
-                    <span>+140</span>
-                    <span>expert coachs</span>
+                    <span>
+                        <NumberCounter end={100} start={80} delay="4" preFix="+" />
+                    </span>
+                    <span>expert coachEs</span>
                 </div>
                 <div>
-                    <span>+978</span>
-                    <span>member joined</span>
+                    <span><NumberCounter end={1000} start={900} delay="4" preFix="+" /></span>
+                    <span>memberS joined</span>
                 </div>
                 <div>
-                    <span>+50</span>
+                    <span><NumberCounter end={50} start={0} delay="4" preFix="+" /></span>
                     <span>fitness programs</span>
                 </div>
             </div>
 
             {/* hero buttons */}
             <div className="hero-buttons">
-                <buttons className="btn">Get Started</buttons>
+                <buttons className="btn">Start Now</buttons>
                 <buttons className="btn">Learn More</buttons>
             </div>
 
@@ -78,7 +82,7 @@ const Hero = () => {
             className="heart-rate">
                 <img src={Heart} alt="" />
                 <span>Heart Rate</span>
-                <span>116 bpm</span>
+                <span>100 bpm</span>
             </motion.div>
 
             {/* hero-images */}
@@ -98,7 +102,7 @@ const Hero = () => {
                 <img src={Calories} alt="" />
                 <div>
                     <span>Calories burned</span>
-                    <span>220 kcal</span>
+                    <span>300 kcal</span>
                 </div>
                 
             </motion.div>

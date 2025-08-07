@@ -24,7 +24,7 @@
 .category {
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: rgb(50, 7, 7);
     padding: 2rem;
     gap: 1rem;
     color: white;
@@ -60,4 +60,19 @@
 .category:hover {
     background: var(--planCard);
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .programs-header {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: x-large;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .program-categories {
+        flex-direction: column;
+    }
 }
